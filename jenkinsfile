@@ -1,8 +1,8 @@
 node{
-stage('SCM checkout'){
-git https://github.com/iskandarsaleh/Hello-World-go
-}
-stage('Compile-Package){
+  stage('SCM checkout'){
+  git https://github.com/iskandarsaleh/Hello-World-go
+  }
+  stage('Compile-Package'){
   sh 'mvn package'
-}
+  }
 }
